@@ -33,7 +33,7 @@ def test_model(model, test_loader, platform):
             label_list.append(labels)
             path_list += list(paths)
             
-       # print("Acc: ", num_correct.item()/num_total)
+        print("Acc: ", num_correct.item()/num_total)
         
         end_time = time.perf_counter()
         inference_time = end_time-start_time

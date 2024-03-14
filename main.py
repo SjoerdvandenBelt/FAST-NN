@@ -64,7 +64,7 @@ def test(height, width, platform, mpath, ipath, opath, model_class, use_bp_dista
     
     # set class folders to false for production
     os.makedirs(opath, exist_ok=True)
-    test_loader, _ = get_loader(ipath, batch_size=128, class_folders=False, shuffle=False, load_binary=load_binary, shuffle_row=False, mix_images=False, validation=False, train_detect=False, reduction=reduction, hotspot=hotspot, label_names=labelnames)
+    test_loader, _ = get_loader(ipath, batch_size=128, class_folders=True, shuffle=False, load_binary=load_binary, shuffle_row=False, mix_images=False, validation=False, train_detect=False, reduction=reduction, hotspot=hotspot, label_names=labelnames)
               
     if use_bp_distance:
         channels = 2
