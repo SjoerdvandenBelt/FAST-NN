@@ -24,7 +24,7 @@ To run FAST-NN, run:
 - `-c` set to `-c FAST-NN` to select FAST-NN model for training and inference (other options include `-c SweepNet`)
 - `-f` set to 1 if loading binary data, set to 0 if using image data
 - `-x` set 1 to use SNP distances in inference and training, note this data should be included in the binary/image data
-- `-b` batch size to use for training or inference
+- `-b` batch size to use for training
 
 ## Example datasets
 Three datasets are provided, which contain SNP and derived allele frequency data, based on the OutOfAfrica-3G09 model by Gutenkunst et al. (2009) [^1].
