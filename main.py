@@ -139,6 +139,7 @@ def main(argv):
  
     labelnames = "[]"
     hotspot = 0 
+    train_detect = 0
     for opt, arg in opts:
         if opt in ("-m", "--mode"):
             mode = arg
