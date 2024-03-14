@@ -27,7 +27,7 @@ To run FAST-NN, run:
 - `-b` batch size to use for training or inference
 
 ## Example datasets
-Three datasets are provided, which contain SNP and derived allele frequency data, based on the OutOfAfrica-3G09 model by Gutenkunst et al. (2009) [1].
+Three datasets are provided, which contain SNP and derived allele frequency data, based on the OutOfAfrica-3G09 model by Gutenkunst et al. (2009) [^1].
 The BINFRQPOS datasets contain derived allele frequency data with SNP position data, in binary format. The BINSNPPOS datasets contain SNP matrix data with SNP positions, in binary format. The 2DSNP datasets contain SNP matrix data without SNP positions, in image format.
 
 ## Example commands
@@ -47,7 +47,7 @@ Training using image SNP data (without SNP distance data):
 
 
 Inference using derived allele frequency data (with SNP distance data):
-`python main.py -m predict -p "cpu" -t 1 -r 0 -i "TestData2DSNP" -d "models/2DSNP/" -o "results/2DSNP/" -h 128 -w 128 -c "FAST-NN" -f 0 -x 0 -b 8 -y 0
+`python main.py -m predict -p "cpu" -t 1 -r 0 -i "TestData2DSNP" -d "models/2DSNP/" -o "results/2DSNP/" -h 128 -w 128 -c "FAST-NN" -f 0 -x 0 -b 8 -y 0`
 
 Inference using binary SNP data (with SNP distance data):
 `python main.py -m predict -p "cpu" -t 1 -r 0 -i "TestDataBINSNPPOS" -d "models/BINSNPPOS/" -o "results/BINSNPPOS/" -h 128 -w 128 -c "FAST-NN" -f 1 -x
