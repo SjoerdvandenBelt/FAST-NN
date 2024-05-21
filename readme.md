@@ -2,10 +2,10 @@
 This is the repository to use the FAST-NN CNN-based selective sweep classification method.
 
 ## Dependencies
-To use FAST-NN, we recommend installing Python 3.10.11, with the following packages:
-- Pytorch
-- Torchvision
-- Numpy
+To use FAST-NN, we recommend installing Python 3.10.11, with the following packages (tested on Ubuntu 22.04.3):
+- Pytorch (version 2.3.0)
+- Torchvision (version 0.18.0)
+- Numpy (version 1.26.4)
 
 ## Command line interface
 To run FAST-NN, run:
