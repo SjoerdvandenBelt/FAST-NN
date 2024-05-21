@@ -47,14 +47,15 @@ Training using image SNP data (without SNP distance data):
 
 
 Inference using derived allele frequency data (with SNP distance data):
-`python main.py -m predict -p "cpu" -t 1 -r 0 -i "TestData2DSNP" -d "models/2DSNP/" -o "results/2DSNP/" -h 128 -w 128 -c "FAST-NN" -f 0 -x 0 -b 8 -y 0`
+`python main.py -m predict -p "cpu" -t 1 -r 1 -i "TestDataBINFRQPOS" -d "models/BINFRQPOS/" -o "results/BINFRQPOS/" -h 128 -w 128 -c "FAST-NN" -f 1 -x 1 -b 8 -y 0`
 
 Inference using binary SNP data (with SNP distance data):
 `python main.py -m predict -p "cpu" -t 1 -r 0 -i "TestDataBINSNPPOS" -d "models/BINSNPPOS/" -o "results/BINSNPPOS/" -h 128 -w 128 -c "FAST-NN" -f 1 -x
 1 -b 8 -y 0`
 
 Inference using image SNP data (without SNP distance data):
-`python main.py -m predict -p "cpu" -t 1 -r 1 -i "TestDataBINFRQPOS" -d "models/BINFRQPOS/" -o "results/BINFRQPOS/" -h 128 -w 128 -c "FAST-NN" -f 1 -x 1 -b 8 -y 0`
+`python main.py -m predict -p "cpu" -t 1 -r 0 -i "TestData2DSNP" -d "models/2DSNP/" -o "results/2DSNP/" -h 128 -w 128 -c "FAST-NN" -f 0 -x 0 -b 8 -y 0`
+
 
 [^1]: Gutenkunst, R. N., Hernandez, R. D., Williamson, S. H., & Bustamante, C. D. (2009).
 Inferring the joint demographic history of multiple populations from multidimensional SNP frequency data.
