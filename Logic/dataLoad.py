@@ -205,6 +205,7 @@ class NoClassImageFolder(CustomImageFolder):
         class_to_idx: Optional[Dict[str, int]] = None,
         extensions: Optional[Union[str, Tuple[str, ...]]] = None,
         is_valid_file: Optional[Callable[[str], bool]] = None,
+        allow_empty=None
     ) -> List[Tuple[str, int]]:
         """Generates a list of samples of a form (path_to_sample, class).
 
